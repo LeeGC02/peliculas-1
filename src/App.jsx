@@ -3,6 +3,8 @@ import "./App.css";
 import { TopCastContainer } from "./components/TopCastContainer";
 import { BookingButton } from "./components/BookingButton";
 import { useEffect, useState } from "react";
+import Home from "./screens/Home";
+import { getMovies } from "./services/movies";
 
 function App() {
   // const [dogs, setDogs] = useState("");
@@ -27,9 +29,7 @@ function App() {
 
   const [peli, setPeli] = useState("");
   useEffect(() => {
-    fetch("https://www.omdbapi.com/?t=ready+player+one&apikey=1839f975")
-    .then((response) => response.json())
-    .then((data) => setPeli(data));
+    getMovies("Spider Man").then((data) => setPeli(data))
   }, []);
 
   return (
