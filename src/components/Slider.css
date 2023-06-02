@@ -3,18 +3,21 @@
   overflow-x: hidden;
   position: fixed;
   left: 18px;
-  height: 121px;
+}
+.slider-container h2 {
+  font-weight: 700;
 }
 .slider {
   display: flex;
   cursor: grab;
+  flex-wrap: wrap;
+  position: relative;
 }
-.movie-item {
-  padding-right: 24px;
-}
-.movie-item img {
-  width: 96px;
+
+.movie-poster {
   height: 121px;
-  border-radius: 17px;
-  pointer-events: none;
+  height: 121px;
+  width: 96px;
+  margin-left: 15px;
+  border-radius: 10px;
 }
