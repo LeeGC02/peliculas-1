@@ -1,20 +1,31 @@
-.serch{
-    margin: 10px;
-    /* width: 320px; */
-    height: 47px;
-    border: 1px solid #6A536A;
-    border-radius: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.search-container {
+  margin: 50px 30px;
+  /* width: 320px; */
+  height: 47px;
+  border: 1px solid #6a536a;
+  border-radius: 26px;
+  display: flex;
+
+  align-items: center;
 }
 
-.info{
-    /* font-family: 'Istok Web'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 17px;
-    align-items: center;
-    color: #6A536A;
+.lupa {
+  width: 20px;
+  height: 22.35px;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  height: 47px;
+
+  border-radius: 0px 26px 26px 0px;
+  color: #6a536a;
+}
+.search-input::placeholder {
+  color: #6a536a;
+  align-items: center;
 }

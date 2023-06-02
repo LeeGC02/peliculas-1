@@ -1,0 +1,20 @@
+.slider-container {
+  width: 100%;
+  overflow-x: hidden;
+  position: fixed;
+  left: 18px;
+  height: 121px;
+}
+.slider {
+  display: flex;
+  cursor: grab;
+}
+.movie-item {
+  padding-right: 24px;
+}
+.movie-item img {
+  width: 96px;
+  height: 121px;
+  border-radius: 17px;
+  pointer-events: none;
+}
